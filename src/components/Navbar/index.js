@@ -10,7 +10,7 @@ const Navbar = ({toggle}) => {
     <Nav>
       <NavbarContainer>
         <NavLogo to="/"> 
-          Felipe Ribeiro
+          FelipeRibeiro|Dev
         </NavLogo>
         <MobileIcon onClick={toggle}>
           <FaBars />
