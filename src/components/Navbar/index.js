@@ -30,7 +30,7 @@ const Navbar = ({toggle}) => {
           </NavItem>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to="contact">Entre em contato</NavBtnLink>
+          <NavBtnLink to="contact">Whatsapp</NavBtnLink>
         </NavBtn>
       </NavbarContainer>
     </Nav>
