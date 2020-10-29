@@ -114,3 +114,5 @@ export const NavBtnLink = styled(LinkRouter)`
     color: #f8f8f2;
   }
 `
+// Base of colors
+// https://github.com/dracula/dracula-theme
