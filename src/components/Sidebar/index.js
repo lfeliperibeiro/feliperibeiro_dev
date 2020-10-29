@@ -2,24 +2,24 @@ import {
   SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute  
 } from './SidebarElements'
 
-const Sidebar = () => {
+const Sidebar = ({isOpen, toggle}) => {
   return (
-    <SidebarContainer>
-      <Icon>
+    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+      <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about">
+          <SidebarLink to="about" onClick={toggle}>
             Sobre
           </SidebarLink>
-          <SidebarLink to="services">
+          <SidebarLink to="services" onClick={toggle}>
             Serviços
           </SidebarLink>
-          <SidebarLink to="potfolio">
+          <SidebarLink to="potfolio" onClick={toggle}>
             Portfolio
           </SidebarLink>
-          <SidebarLink to="contact">
+          <SidebarLink to="contact" onClick={toggle}>
             Contato
           </SidebarLink>
         </SidebarMenu>
