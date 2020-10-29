@@ -1,10 +1,14 @@
 const Navbar = () => {
   return (
-    <div>
-      <h1>
-        Nav
-      </h1>
-    </div>
+   <>
+    <Nav>
+      <NavbarContainer>
+        <NavLogo>
+          Felipe Ribeiro
+        </NavLogo>
+      </NavbarContainer>
+    </Nav>
+   </>
   )
 }
 
