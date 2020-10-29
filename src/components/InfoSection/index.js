@@ -14,27 +14,40 @@ import {
 
 } from './InfoElements'
 
-const { Button } = require("react-scroll")
+import { Button } from '../ButtonElements'
 
-const InfoSection = () => {
+import img from '../../images/image-1.svg'
+
+const InfoSection = ({
+  lightBg,
+  id,
+  imgStart,
+  topLine,
+  lightText,
+  headline,
+  darkText,
+  description,
+  buttonLabel,
+  alt,  
+}) => {
   return (
     <>
-    <InfoContainer>
+    <InfoContainer lightBg={lightBg} id={id}>
       <InfoWrapper>
-        <InfoRow>
+        <InfoRow imgStart={imgStart}> 
           <Column1>
             <TextWrapper>
-              <TopLine>TopLine</TopLine>
-              <Heading>Heading</Heading>
-              <SubTitle>Subtitle</SubTitle>
+              <TopLine>{topLine}</TopLine>
+              <Heading lightText={lightText}>{headline}</Heading>
+              <SubTitle darkText={darkText}>{description}</SubTitle>
               <BtnWrap>
-                <Button to="home"/>
+                <Button to="home">{buttonLabel}</Button>
               </BtnWrap>
             </TextWrapper>
           </Column1>
           <Column2>
             <ImgWrap>
-              <Img />
+              <Img src={img} alt={alt} />
             </ImgWrap>
           </Column2>
         </InfoRow>

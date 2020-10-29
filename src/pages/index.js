@@ -1,6 +1,7 @@
 import { useState } from "react"
 import HeroSection from "../components/HeroSection"
 import InfoSection from "../components/InfoSection"
+import { HomeObjOne } from "../components/InfoSection/Data"
 
 const { default: Navbar } = require("../components/Navbar")
 const { default: Sidebar } = require("../components/Sidebar")
@@ -16,7 +17,7 @@ const Home = () => {
     <Sidebar isOpen={isOpen} toggle={toggle} />
     <Navbar toggle={toggle} />
     <HeroSection />
-    <InfoSection />
+    <InfoSection {...HomeObjOne}/>
     </>
   )
 }
