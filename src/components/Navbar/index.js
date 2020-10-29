@@ -1,4 +1,3 @@
-import React from 'react'
 import 
 { 
   Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink 
