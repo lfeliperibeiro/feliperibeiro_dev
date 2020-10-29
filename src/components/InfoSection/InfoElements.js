@@ -59,7 +59,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({lightText}) => (lightText ? '#f8f8f2' : '#282a36')};
+  color: ${({lightText}) => (lightText ? '#f8f8f2' : '#44475a')};
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -70,7 +70,7 @@ export const SubTitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({darkText}) => (darkText ? '#282a36' : '#f8f8f2')}; 
+  color: ${({darkText}) => (darkText ? '#ffb86c' : '#f8f8f2')}; 
 `
 export const BtnWrap = styled.div`
   display: flex;

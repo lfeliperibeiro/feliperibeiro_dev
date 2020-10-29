@@ -16,8 +16,6 @@ import {
 
 import { Button } from '../ButtonElements'
 
-import img from '../../images/image-1.svg'
-
 const InfoSection = ({
   lightBg,
   id,
@@ -28,6 +26,7 @@ const InfoSection = ({
   darkText,
   description,
   buttonLabel,
+  img,
   alt, 
   primary,
   dark, 
