@@ -21,7 +21,7 @@ const Sidebar = ({isOpen, toggle}) => {
           </SidebarLink>
           </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="contact">Whatsapp</SidebarRoute>
+          <SidebarRoute href=" https://api.whatsapp.com/send?phone=5511976426686">Whatsapp</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
