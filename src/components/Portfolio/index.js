@@ -4,7 +4,7 @@ import {
   PotfolioWrapper,
   PortfolioCard,
   PortfolioIcon,
-  PortfolioH2,
+  PortfolioLink,
   PortfolioP,
 } from './PortfolioElements'
 
@@ -19,23 +19,23 @@ const Portfolio = () => {
       <PotfolioWrapper>
         <PortfolioCard>
           <PortfolioIcon src={Icon1}/>         
-          <PortfolioH2>
+          <PortfolioLink href='https://fucsia.arq.br/' target='__blank'>
             Fucsia Arquitetura
-          </PortfolioH2>
+          </PortfolioLink>
             <PortfolioP>Desenvolvimento de website</PortfolioP>
         </PortfolioCard>
         <PortfolioCard>
         <PortfolioIcon src={Icon2}/>   
-          <PortfolioH2>
+        <PortfolioLink href='http://happydarafa.rafalauretto.com/' target='__blank'>
             Happy da Rafa
-          </PortfolioH2>
+          </PortfolioLink>
             <PortfolioP>Desenvolvimento de website</PortfolioP>
         </PortfolioCard>
         <PortfolioCard>
         <PortfolioIcon src={Icon3}/> 
-          <PortfolioH2>
+        <PortfolioLink href='https://enemeopflores.com.br/' target='__blank'>
             Fucsia Arquitetura
-          </PortfolioH2>
+          </PortfolioLink>
             <PortfolioP>Desenvolvimento de website</PortfolioP>
         </PortfolioCard>
       </PotfolioWrapper>

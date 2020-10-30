@@ -68,11 +68,18 @@ import styled from 'styled-components'
       font-size: 2rem;
     }
   `
-  export const PortfolioH2 = styled.h2`
+  export const PortfolioLink = styled.a`
     font-size: 1rem;
     margin-bottom: 10px;
     text-align: center;
     color: #bd93f9;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;	
+
+    &:hover {
+      color: #ff79c6;
+      transition: all 0.2s ease-in-out;	
+    }
     
   `
   export const PortfolioP = styled.p`

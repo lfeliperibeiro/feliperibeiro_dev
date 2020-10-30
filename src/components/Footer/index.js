@@ -27,7 +27,7 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-                <FooterLink to="/">Home</FooterLink>
+                <FooterLink to="/" onClick={toggleHome}>Home</FooterLink>
                 <FooterLink to="about">Sobre</FooterLink>
                 <FooterLink to="services">Serviços</FooterLink>
                 <FooterLink to="portfolio">Portfolio</FooterLink>             
@@ -43,13 +43,13 @@ const Footer = () => {
           Felipe Ribeiro Dev ©2020 - Feito com 💜 por Felipe Ribeiro
           </WebsiteCopy>
           <SocialIcons>
-            <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
+            <SocialIconLink href="https://www.linkedin.com/in/lfeliperibeiro/" target="_blank" aria-label="Linkedin">
               <FaLinkedin />
             </SocialIconLink>
-            <SocialIconLink href="/" target="_blank" aria-label="GitHub">
+            <SocialIconLink href="https://github.com/lfeliperibeiro" target="_blank" aria-label="GitHub">
               <FaGithub />
             </SocialIconLink>
-            <SocialIconLink href="/" target="_blank" aria-label="Twitter">
+            <SocialIconLink href="https://twitter.com/Lfelipe_rib" target="_blank" aria-label="Twitter">
               <FaTwitter />
             </SocialIconLink>
           </SocialIcons>
