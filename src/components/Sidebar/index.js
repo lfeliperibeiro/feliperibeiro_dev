@@ -16,13 +16,10 @@ const Sidebar = ({isOpen, toggle}) => {
           <SidebarLink to="services" onClick={toggle}>
             Serviços
           </SidebarLink>
-          <SidebarLink to="potfolio" onClick={toggle}>
+          <SidebarLink to="portfolio" onClick={toggle}>
             Portfolio
           </SidebarLink>
-          <SidebarLink to="contact" onClick={toggle}>
-            Contato
-          </SidebarLink>
-        </SidebarMenu>
+          </SidebarMenu>
         <SideBtnWrap>
           <SidebarRoute to="contact">Whatsapp</SidebarRoute>
         </SideBtnWrap>

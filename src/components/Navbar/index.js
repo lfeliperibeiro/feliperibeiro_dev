@@ -1,15 +1,45 @@
-import 
-{ 
-  Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink 
-} 
-  from './NavElements'
+import { useEffect, useState } from 'react'
 import { FaBars } from 'react-icons/fa'
+import {IconContext} from 'react-icons/lib'
+import {animateScroll as scroll} from 'react-scroll'
+
+import { 
+  Nav, 
+  NavbarContainer,
+  NavLogo, 
+  MobileIcon, 
+  NavMenu, 
+  NavItem, 
+  NavLinks, 
+  NavBtn, 
+  NavBtnLink 
+} from './NavElements'
+
 const Navbar = ({toggle}) => {
+  const [scrollNav, setScrollNav] = useState(false)
+
+  const changeNav = () => {
+    if(window.scrollY >= 80) {
+      setScrollNav(true)
+    }else {
+      setScrollNav(false)
+    }
+  } 
+  
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav)
+  }, [])
+
+  const toggleHome = () => {
+    scroll.scrollToTop()
+  }
+
   return (
    <>
-    <Nav>
+   <IconContext.Provider value={{color: '#ff79c6'}}>
+    <Nav scrollNav={scrollNav}>
       <NavbarContainer>
-        <NavLogo to="/"> 
+        <NavLogo to="/" onClick={toggleHome}> 
           FelipeRibeiro|Dev
         </NavLogo>
         <MobileIcon onClick={toggle}>
@@ -24,16 +54,14 @@ const Navbar = ({toggle}) => {
           </NavItem>
           <NavItem>
             <NavLinks to="portfolio">Portfolio</NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks to="contact">Contato</NavLinks>
-          </NavItem>
+          </NavItem>         
         </NavMenu>
         <NavBtn>
           <NavBtnLink to="contact">Whatsapp</NavBtnLink>
         </NavBtn>
       </NavbarContainer>
     </Nav>
+    </IconContext.Provider>
    </>
   )
 }
