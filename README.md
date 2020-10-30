@@ -18,7 +18,7 @@
 
 Aplicação feita para portfolio.
 
-A idéia dessa aplicação é mostrar para os meus clientes e empresas as minhas quilificações como desenvolveodr front-end
+A idéia dessa aplicação é mostrar para os meus clientes e empresas as minhas qualificações como desenvolveodr front-end
 
 <a id="tecnologias-utilizadas"></a>
 
