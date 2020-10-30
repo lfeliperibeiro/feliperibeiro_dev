@@ -87,3 +87,24 @@ export const Img = styled.img`
   margin: 0 0 10px 0;
   padding-right: 0;
 `
+export const ButtonLink = styled.a`
+   border-radius: 50px;
+  background: #bd93f9;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #44475a;
+  text-decoration: none;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #ff79c6;
+    color: #f8f8f2;
+  }
+`
+
+

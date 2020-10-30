@@ -10,11 +10,12 @@ import {
   BtnWrap,
   Column2,
   ImgWrap,
-  Img
+  Img,
+  ButtonLink
 
 } from './InfoElements'
 
-import { Button } from '../ButtonElements'
+
 
 const InfoSection = ({
   lightBg,
@@ -43,18 +44,7 @@ const InfoSection = ({
               <Heading lightText={lightText}>{headline}</Heading>
               <SubTitle darkText={darkText}>{description}</SubTitle>
               <BtnWrap>
-                <Button 
-                  href=" https://api.whatsapp.com/send?phone=5511976426686" target='__blank'
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact={true}
-                  offset={-80}
-                  primary={primary ? 1 : 0}
-                  dark={dark ? 1 : 0}
-                  dark2={dark2 ? 1 : 0}
-
-                  >{buttonLabel}</Button>
+              <ButtonLink href=" https://api.whatsapp.com/send?phone=5511976426686" target='__blank'>Entre em contato</ButtonLink>
               </BtnWrap>
             </TextWrapper>
           </Column1>

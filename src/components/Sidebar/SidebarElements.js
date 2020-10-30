@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link as LinkRouter} from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 import { FaTimes } from 'react-icons/fa'
 
@@ -65,7 +64,7 @@ export const SideBtnWrap = styled.div`
   display: flex;
   justify-content: center;
 `
-export const SidebarRoute = styled(LinkRouter)`
+export const SidebarRoute = styled.a`
   border-radius: 50px;
   background: #bd93f9;
   white-space: nowrap;
