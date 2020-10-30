@@ -84,7 +84,7 @@ const Navbar = ({toggle}) => {
           </NavItem>         
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to="contact">Whatsapp</NavBtnLink>
+          <NavBtnLink href="https://wa.me/5511976426686" target='__blank'>Whatsapp</NavBtnLink>
         </NavBtn>
       </NavbarContainer>
     </Nav>
