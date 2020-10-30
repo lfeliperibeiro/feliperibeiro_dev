@@ -103,6 +103,11 @@ export const FooterLink = styled(Link)`
   export const SocialIconLink = styled.a`
     color: #50fa7b;
     font-size: 24px;
+    transition: all 0.2s ease-in-out;
 
+    &:hover {
+      color: #ff79c6;
+      transition: all 0.2s ease-in-out;
+    }
   `
   

@@ -44,7 +44,7 @@ const InfoSection = ({
               <SubTitle darkText={darkText}>{description}</SubTitle>
               <BtnWrap>
                 <Button 
-                  href="https://wa.me/5511976426686" target='__blank'
+                  href=" https://api.whatsapp.com/send?phone=5511976426686" target='__blank'
                   smooth={true}
                   duration={500}
                   spy={true}
