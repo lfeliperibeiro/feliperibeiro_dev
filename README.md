@@ -1,43 +1,34 @@
-<h3 align="center">    
-    <b>Felipe Ribeiro Dev</b>     
-</h3>
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-<p align="center">
- <a>
-  <img alt="License" src="https://img.shields.io/github/license/vitorserrano/ecoleta?color=%237519C1">
-  <br><br>
-<img alt="FelipeRIbeiro" title="#logo" width="1718px" src="./src/images/screenshot.jpg">
+## Getting Started
 
-  # Índice
+First, run the development server:
 
-- [Sobre](#sobre)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-<a id="sobre"></a>
-  ## :bookmark: Sobre
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Aplicação feita para portfolio.
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-A idéia dessa aplicação é mostrar para os meus clientes e empresas as minhas qualificações como desenvolveodr front-end
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-<a id="tecnologias-utilizadas"></a>
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## :rocket: Tecnologias Utilizadas
+## Learn More
 
-O projeto foi desenvolvido utilizando as seguintes tecnologias:
+To learn more about Next.js, take a look at the following resources:
 
-* React
-* Styled-components
-* JavaScript
-* Node.js
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## :memo: License
+## Deploy on Vercel
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
----
-
-<h4 align="center">
-    Feito com 💜 by <a href="https://www.linkedin.com/in/lfeliperibeiro/" target="_blank">Felipe Ribeiro</a>
-</h4>
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
