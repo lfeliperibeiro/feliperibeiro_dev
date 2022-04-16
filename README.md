@@ -1,34 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h3 align="center">    
+    <b>Felipe Ribeiro Dev</b>     
+</h3>
 
-## Getting Started
+<p align="center">
+ <a>
+  <img alt="License" src="https://img.shields.io/github/license/vitorserrano/ecoleta?color=%237519C1">
+</a>
+  <br><br>
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# Índice
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Sobre](#sobre)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+<a id="sobre"></a>
+## :bookmark: Sobre
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Página pessoal e de portfolio
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+<a id="tecnologias-utilizadas"></a>
 
-To learn more about Next.js, take a look at the following resources:
+## :rocket: Tecnologias Utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+* React
+* Tailwind
+* typescript
+* Node.js
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## :memo: License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+---
+
+<h4 align="center">
+    Feito com 💜 by <a href="https://www.linkedin.com/in/lfeliperibeiro/" target="_blank">Felipe Ribeiro</a>
+</h4>
