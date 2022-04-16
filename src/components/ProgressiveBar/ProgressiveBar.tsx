@@ -1,23 +1,18 @@
 import * as React from 'react';
-import { useEffect } from 'react';
 
 interface Props {
   width: number;
+  widthLG: number;
   percent: number;
 }
 
-export const ProgressiveBar = ({ width, percent }: Props) => {
-  const [value, setValue] = React.useState(0);
-
-  useEffect(() => {
-    setValue(percent * width);
-  }, [percent, width]);
+export const ProgressiveBar = ({ width, percent, widthLG }: Props) => {
+  const value = percent * width;
 
   return (
-    <div className={`bg-gray100 rounded ${width}`}>
+    <div className={`bg-gray100 rounded ${width} lg:${widthLG}`}>
       <div
-        style={{ width: `${value}px` }}
-        className={`h-3 rounded bg-green transition delay-75 ease-in duration-300`}
+        className={`h-3 rounded bg-green transition delay-75 ease-in duration-300 w-${value}`}
       />
     </div>
   );
