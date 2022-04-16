@@ -1,5 +1,5 @@
 <h3 align="center">    
-    <b>Felipe Ribeiro Dev</b>     
+    <b>Felipe Ribeiro Front-End Developer</b>     
 </h3>
 
 <p align="center">
