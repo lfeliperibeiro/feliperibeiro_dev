@@ -1,5 +1,5 @@
 {
-  "name": "feliperibeiro_dev2",
+  "name": "feliperibeiro_dev",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.4",
     "next": "12.1.5",
+    "postcss": "^8.4.12",
+    "postcss-flexbugs-fixes": "^4",
+    "postcss-preset-env": "^7.4.3",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "styled-components": "^5.3.5"
+    "react-icons": "^4.3.1",
+    "tailwindcss": "^3.0.24"
   },
   "devDependencies": {
     "@types/node": "17.0.24",
     "@types/react": "18.0.5",
     "@types/react-dom": "18.0.1",
-    "@types/styled-components": "^5.1.25",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5",
     "prettier": "^2.6.2",
