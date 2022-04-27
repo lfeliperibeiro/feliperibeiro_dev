@@ -5,6 +5,7 @@ export function Repositories() {
   type Repository = {
     full_name: string;
     description: string;
+    clone_url: string;
   };
 
   const url = '/users/lfeliperibeiro/repos';
@@ -26,8 +27,12 @@ export function Repositories() {
                 key={repo.full_name}
                 className={'mb-5 p-4 border-solid border-b-2 border-gray400'}
               >
-                <h1 className={'text-pink500 font-bold'}>{repo.full_name}</h1>
-                <p className={'text-white'}>{repo.description}</p>
+                <a href={repo.clone_url} target={'_blank'} rel="noreferrer">
+                  <h1 className={'text-pink500 font-bold hover:text-pink700'}>
+                    {repo.full_name}
+                  </h1>
+                  <p className={'text-white'}>{repo.description}</p>
+                </a>
               </li>
             );
           })
