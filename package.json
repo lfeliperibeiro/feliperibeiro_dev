@@ -11,6 +11,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.4",
     "axios": "^0.26.1",
+    "dracula-ui": "^1.0.1",
     "next": "12.1.5",
     "postcss": "^8.4.12",
     "postcss-flexbugs-fixes": "^4",

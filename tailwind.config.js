@@ -16,6 +16,7 @@ module.exports = {
       gray700: '#404040',
       green: '#50fa7b',
       pink500: '#ff79c6',
+      pink700: '#ff5ebc',
       purple100: '#bd93f9',
       background: '#282a36',
     },
