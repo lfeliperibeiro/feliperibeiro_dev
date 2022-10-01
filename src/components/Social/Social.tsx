@@ -9,7 +9,7 @@ export function Social() {
         target={'_blank'}
         rel="noreferrer"
       >
-        <FaGithub />
+        <FaGithub  size={20}/>
       </a>
       <a
         className={'text-purple100 hover:text-pink500'}
@@ -17,7 +17,7 @@ export function Social() {
         target={'_blank'}
         rel="noreferrer"
       >
-        <FaLinkedin />
+        <FaLinkedin size={20}/>
       </a>
       <a
         className={'text-purple100 hover:text-pink500'}
@@ -25,7 +25,7 @@ export function Social() {
         target={'_blank'}
         rel="noreferrer"
       >
-        <FaTwitter />
+        <FaTwitter size={20}/>
       </a>
     </div>
   );
