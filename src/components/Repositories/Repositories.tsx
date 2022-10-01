@@ -1,5 +1,6 @@
 import { useFetch } from '../../hooks/useFetch';
 import { Spinner } from '../Spinner/Spinner';
+import {Card, List} from "dracula-ui";
 
 export function Repositories() {
   type Repository = {
@@ -12,12 +13,13 @@ export function Repositories() {
   const { data: repositories, isFetching } = useFetch<Repository[]>(url);
 
   return (
+    <Card color="purple">
     <div
       className={
-        'bg-gray500 h-56 rounded scrollbar-thin scrollbar-thumb-pink500 scrollbar-track-gray400 overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full'
+        'h-56 rounded scrollbar-thin scrollbar-thumb-pink500 scrollbar-track-gray400 overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full'
       }
     >
-      <ul>
+      <List color="purpleCyan">
         {isFetching ? (
           <Spinner />
         ) : (
@@ -25,19 +27,21 @@ export function Repositories() {
             return (
               <li
                 key={repo.full_name}
-                className={'mb-5 p-4 border-solid border-b-2 border-gray400'}
+                className={'mb-5 p-4 border-solid border-b-2 border-gray400 drac-text drac-text-white'}
               >
                 <a href={repo.clone_url} target={'_blank'} rel="noreferrer">
-                  <h1 className={'text-pink500 font-bold hover:text-pink700'}>
+
+                  <h1 className={'font-bold hover:text-pink700 drac-text drac-text-cyan'}>
                     {repo.full_name}
                   </h1>
-                  <p className={'text-white'}>{repo.description}</p>
+                  <p className={'drac-text drac-text-white'}>{repo.description}</p>
                 </a>
               </li>
             );
           })
         )}
-      </ul>
+      </List>
     </div>
+    </Card>
   );
 }

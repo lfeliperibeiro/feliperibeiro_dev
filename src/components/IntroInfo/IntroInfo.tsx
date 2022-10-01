@@ -1,18 +1,22 @@
+import {Box, Text} from 'dracula-ui'
+
 export function IntroInfo() {
   return (
-    <>
-      <h1 className={'text-white font-black text-2xl  lg:text-3xl '}>
+    <div className={'mt-4'}>
+      <Text color="white" weight="semibold" size="md">
         {/* eslint-disable-next-line react/no-unescaped-entities */}
         Hi, I'm {''}
-        <span className={'text-pink500 lg:text-4xl text-3xl'}>
+        <Text  color={'pinkPurple'} weight={'bold'} size={'lg'}>
           Felipe Ribeiro
-        </span>
-      </h1>
-      <p className={'text-white mt-2  max-w-screen-sm'}>
+        </Text>
+      </Text>
+      <Box>
+      <Text color="white" weight="normal" size="sm">
         Front-end developer with 5 years of experience. Currently I have worked
         with the following technologies: React, NextJS, Styled Components,
         Tailwind CSS, Zustand, Immer, Axios, Jest, Testing Library
-      </p>
-    </>
+      </Text>
+      </Box>
+    </div>
   );
 }

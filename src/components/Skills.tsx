@@ -1,25 +1,24 @@
 import { ProgressiveBar } from './ProgressiveBar/ProgressiveBar';
+import {Card, Heading, Text} from "dracula-ui";
 
 export function Skills() {
   return (
-    <div
-      className={
-        'bg-white flex flex-col lg:gap-4 gap-2 p-10 lg:p-20 lg:w-5/12 w-96 lg:mr-10  rounded shadow-lg shadow-black'
-      }
-    >
-      <h1 className={'text-purple100 font-bold text-lg'}>Skills</h1>
-      <p className={'text-pink500 font-bold text-md'}>React</p>
+    <div className={'px-12 mb-10'}>
+    <Card color="yellowPink" p="sm">
+      <Heading size={'lg'} color={'pink'}>Skills</Heading>
+      <Text color="black">React</Text>
       <ProgressiveBar width={32} percent={3.5} widthLG={30} />
-      <p className={'text-pink500 font-bold text-md'}>Next</p>
+      <Text color="black">Next</Text>
       <ProgressiveBar width={100} percent={4} widthLG={100} />
-      <p className={'text-pink500 font-bold text-md'}>Styled Components</p>
+      <Text color="black">Styled Components</Text>
       <ProgressiveBar width={100} percent={4.4} widthLG={100} />
-      <p className={'text-pink500 font-bold text-md'}>Tailwind</p>
+      <Text color="black">Tailwind</Text>
       <ProgressiveBar width={100} percent={4.6} widthLG={100} />
-      <p className={'text-pink500 font-bold text-md'}>Zustand</p>
+      <Text color="black">Zustand</Text>
       <ProgressiveBar width={100} percent={4.6} widthLG={100} />
-      <p className={'text-pink500 font-bold text-md'}>Jest</p>
+      <Text color="black">Jest</Text>
       <ProgressiveBar width={100} percent={4.4} widthLG={100} />
+    </Card>
     </div>
   );
 }
