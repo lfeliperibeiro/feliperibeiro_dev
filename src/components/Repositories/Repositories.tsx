@@ -30,6 +30,7 @@ export function Repositories() {
                 className={'mb-5 p-4 border-solid border-b-2 border-gray400 drac-text drac-text-white'}
               >
                 <a href={repo.clone_url} target={'_blank'} rel="noreferrer">
+
                   <h1 className={'font-bold hover:text-pink700 drac-text drac-text-cyan'}>
                     {repo.full_name}
                   </h1>
