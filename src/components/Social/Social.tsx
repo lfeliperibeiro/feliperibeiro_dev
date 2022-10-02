@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export function Social() {
   return (
-    <div className={'flex items-center  gap-4 my-10 text-3xl'}>
+    <div className={'flex items-center  gap-16 my-10 text-3xl'}>
       <a
         className={'text-purple100 hover:text-pink500'}
         href={'https://github.com/lfeliperibeiro'}

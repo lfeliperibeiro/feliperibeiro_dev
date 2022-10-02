@@ -3,7 +3,7 @@ import {Card, Heading, Text} from "dracula-ui";
 
 export function Skills() {
   return (
-    <div className={'px-12 mb-10'}>
+    <div className={'px-20 mb-10'}>
     <Card color="yellowPink" p="sm">
       <Heading size={'lg'} color={'pink'}>Skills</Heading>
       <Text color="black">React</Text>

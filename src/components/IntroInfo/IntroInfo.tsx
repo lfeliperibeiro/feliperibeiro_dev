@@ -1,21 +1,23 @@
-import {Box, Text} from 'dracula-ui'
+import { Box, Heading, Paragraph } from 'dracula-ui';
 
 export function IntroInfo() {
   return (
-    <div className={'mt-4'}>
-      <Text color="white" weight="semibold" size="md">
-        {/* eslint-disable-next-line react/no-unescaped-entities */}
-        Hi, I'm {''}
-        <Text  color={'pinkPurple'} weight={'bold'} size={'lg'}>
+    <div className={'mt-4 items-center max-w-2xl flex flex-col'}>
+      <div className={'flex items-center gap-2'}>
+        <Heading color="white" as={'h1'} size="md">
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
+          Hi, I'm
+        </Heading>
+        <Heading color={'pinkPurple'} size={'xl'}>
           Felipe Ribeiro
-        </Text>
-      </Text>
+        </Heading>
+      </div>
       <Box>
-      <Text color="white" weight="normal" size="sm">
-        Front-end developer with 5 years of experience. Currently I have worked
-        with the following technologies: React, NextJS, Styled Components,
-        Tailwind CSS, Zustand, Immer, Axios, Jest, Testing Library
-      </Text>
+        <Paragraph color="white" weight="normal" size="sm" align="center">
+          Front-end engineer with 5 years of experience. Currently I have worked
+          with the following technologies: React, NextJS, Styled Components,
+          Tailwind CSS, Zustand, Immer, Axios, Jest, Testing Library
+        </Paragraph>
       </Box>
     </div>
   );
