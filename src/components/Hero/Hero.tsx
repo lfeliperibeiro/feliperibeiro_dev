@@ -20,16 +20,16 @@ export const Hero = () => {
 
         <IntroInfo />
         <Social />
-        <div className={'mb-4'}>
+        <div className={'mb-4 flex flex-col gap-10'}>
           <div className={'text-center mb-4'}>
             <Heading size="lg" color="pink">
               Repositories
             </Heading>
           </div>
           <Repositories />
+          <Skills />
         </div>
       </div>
-      <Skills />
     </Box>
   );
 };
