@@ -4,7 +4,7 @@ import { MainProjects } from './components/MainProjects'
 
 export default function Home() {
   return (
-    <main className="flex h-screen flex-col items-center justify-center bg-gray-950">
+    <main className="flex h-screen w-full flex-col items-center justify-center bg-gray-950">
       <Hero />
       <MainProjects />
       <Footer />

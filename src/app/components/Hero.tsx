@@ -5,15 +5,15 @@ export function Hero() {
     <section className="flex max-w-3xl flex-1 flex-col items-center justify-center">
       <div className="flex flex-col items-center justify-center ">
         <Image
-          className="h-36 w-36 rounded-full shadow-sm"
+          className="h-28 w-28 rounded-full shadow-sm md:h-36 md:w-36"
           src={'https://github.com/lfeliperibeiro.png'}
           alt={'Felipe Ribeiro'}
           width={200}
           height={200}
         />
         <div>
-          <p className=" text-center text-2xl font-bold text-zinc-50">
-            <span className=" mr-2 bg-gradient-to-r from-[#B16CEA] to-[#FF8A56] bg-clip-text text-3xl font-bold text-transparent">
+          <p className=" px-4 text-center text-lg font-bold text-zinc-50 md:px-0 md:text-2xl">
+            <span className=" mr-2 bg-gradient-to-r from-[#B16CEA] to-[#FF8A56] bg-clip-text text-2xl font-bold text-transparent md:text-3xl">
               Hello, {`I'm`} Felipe,
             </span>
             Senior Frontend Engineer <br /> based in São Paulo, Brazil
@@ -22,7 +22,7 @@ export function Hero() {
       </div>
 
       <div className="flex flex-col items-center justify-center">
-        <p className="mt-4 max-w-2xl text-center text-sm font-thin text-zinc-50">
+        <p className="mt-4 max-w-xl px-8 text-center text-xs font-thin text-zinc-50 md:max-w-2xl md:px-0 md:text-sm">
           Senior Frontend engineer with 6 years of experience. Currently I have
           worked with the following technologies: React, NextJS, Styled
           Components, Tailwind CSS, Zustand, Immer, Axios, Jest, Testing
