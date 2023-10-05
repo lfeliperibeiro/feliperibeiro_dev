@@ -2,7 +2,10 @@ import Image from 'next/image'
 
 export function Hero() {
   return (
-    <section className="flex max-w-3xl flex-1 flex-col items-center justify-center">
+    <section
+      className="flex max-w-3xl flex-1 flex-col items-center justify-center"
+      data-testid="hero"
+    >
       <div className="flex flex-col items-center justify-center ">
         <Image
           className="h-28 w-28 rounded-full shadow-sm md:h-36 md:w-36"

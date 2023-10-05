@@ -7,7 +7,10 @@ interface LinkIconProps {
 
 export function LinkIcons({ children, href }: LinkIconProps) {
   return (
-    <div className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-r from-[#B16CEA] to-[#FF8A56] md:h-8 md:w-8">
+    <div
+      className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-r from-[#B16CEA] to-[#FF8A56] md:h-8 md:w-8"
+      data-testid="link-icons"
+    >
       <a
         href={href}
         target={'_blank'}

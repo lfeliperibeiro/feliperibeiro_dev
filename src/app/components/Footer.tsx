@@ -4,7 +4,10 @@ import { LinkIcons } from './LinkIcons'
 export function Footer() {
   const date = new Date()
   return (
-    <footer className="flex w-full items-center justify-between border-t border-zinc-50/40 px-2 py-4 md:px-48">
+    <footer
+      className="flex w-full items-center justify-between border-t border-zinc-50/40 px-2 py-4 md:px-48"
+      data-testid="footer"
+    >
       <div className="flex w-full items-center justify-between py-4">
         <p className="text-xs  font-thin text-whiteSecondary md:text-sm">
           ©{date.getFullYear()}, Felipe Ribeiro

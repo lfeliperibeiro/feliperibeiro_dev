@@ -1,6 +1,9 @@
 export function MainProjects() {
   return (
-    <div className="mb-16 flex flex-col items-center justify-center">
+    <div
+      className="mb-16 flex flex-col items-center justify-center"
+      data-testid="main-projects"
+    >
       <h1 className="my-8 text-xl font-bold text-gray-500 md:mb-4 md:text-2xl">
         Main Projects
       </h1>
