@@ -1,9 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
 
-import { Bai_Jamjuree as BaiJamjure } from 'next/font/google'
+import { Bai_Jamjuree as BaiJamjuree } from 'next/font/google'
 
-const bai = BaiJamjure({
+const bai = BaiJamjuree({
   subsets: ['latin'],
   weight: ['400', '700'],
 })
