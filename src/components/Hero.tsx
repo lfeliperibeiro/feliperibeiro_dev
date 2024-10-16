@@ -11,10 +11,10 @@ export function Hero() {
           Inspired. UX. Idea
         </h1>
       </div>
-      <div className="flex gap-6 ">
+      <div className="gap-6 sm:flex">
         <div>
           <Image
-            className="rounded-md shadow-md"
+            className="mb-4 rounded-md pl-4 shadow-md sm:mb-0 sm:pl-0 "
             alt="Felipe Ribeiro"
             width={200}
             height={200}
@@ -38,7 +38,7 @@ export function Hero() {
       </div>
 
       <div className="mt-8 max-w-xl">
-        <span className="text-xl text-zinc-50">Bio</span>
+        <span className="pl-8 text-xl text-zinc-50 sm:pl-0">Bio</span>
 
         <blockquote className="mt-8 border-l-4 border-solid border-l-gray-700 pl-5">
           <p className="px-4 text-base font-light text-zinc-400 md:px-0">
