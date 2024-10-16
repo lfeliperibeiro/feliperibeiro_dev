@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 export function Hero() {
   return (
@@ -20,14 +20,14 @@ export function Hero() {
             height={200}
             quality={100}
             src={
-              "https://media.licdn.com/dms/image/v2/C4D03AQG7fifUFFS-yQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1648318789556?e=1734566400&v=beta&t=b4DrX-JMUkoKAJRiB2qJGWLFGr04HqkfFhb-S_EtNIw"
+              'https://media.licdn.com/dms/image/v2/C4D03AQG7fifUFFS-yQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1648318789556?e=1734566400&v=beta&t=b4DrX-JMUkoKAJRiB2qJGWLFGr04HqkfFhb-S_EtNIw'
             }
           />
         </div>
         <div className="max-w-sm">
           <p className=" px-4 text-base font-light text-zinc-400 md:px-0">
             <span className="font-normal text-zinc-50">
-              Hi! I'm Felipe Ribeiro
+              Hi! I&apos;m Felipe Ribeiro
             </span>
             , a Senior Frontend Engineer. 6 years of experience. Currently I
             have worked with the following technologies: React, NextJS, Styled
@@ -72,5 +72,5 @@ export function Hero() {
         </div>
       </div> */}
     </section>
-  );
+  )
 }
