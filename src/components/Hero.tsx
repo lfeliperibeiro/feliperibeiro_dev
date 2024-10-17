@@ -107,6 +107,10 @@ export function Hero({ language }: HeroProps) {
           <ul className="px-4 text-base font-light text-zinc-400 md:px-0">
             {language === 'en' ? (
               <>
+                <li>
+                  Worked at <span className="text-zinc-200">PagSeguro </span>{' '}
+                  and <span className="text-zinc-200">Banco Sofisa</span>;
+                </li>
                 <li> Development and maintenance of applications; </li>
                 <li>
                   Define the architecture of applications, choosing the
