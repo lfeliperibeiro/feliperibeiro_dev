@@ -125,6 +125,10 @@ export function Hero({ language }: HeroProps) {
               </>
             ) : (
               <>
+                <li>
+                  Atuação na <span className="text-zinc-200">PagSeguro </span> e{' '}
+                  <span className="text-zinc-200">Banco Sofisa</span>;
+                </li>
                 <li> Desenvolvimento e manutenção de aplicações; </li>
                 <li>
                   Definir a arquitetura das aplicações, escolhendo as
