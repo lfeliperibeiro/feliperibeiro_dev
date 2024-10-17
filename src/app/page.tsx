@@ -25,7 +25,7 @@ export default async function Home() {
 
   try {
     const response = await fetch(
-      `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://feliperibeiro-dev.vercel.app&key=AIzaSyD3KXs0SqHe3W-5apfPaz0iyeTmRKtj3Ao&category=performance&category=accessibility&category=best-practices&category=seo`,
+      `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${process.env.NEXT_PUBLIC_PAGESPEED_URL}&key=${process.env.NEXT_PUBLIC_PAGESPEED_API_KEY}&category=performance&category=accessibility&category=best-practices&category=seo`,
     )
     if (!response.ok) {
       throw new Error('Network response was not ok')
