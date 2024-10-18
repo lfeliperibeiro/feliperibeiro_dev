@@ -1,12 +1,12 @@
-"use client";
-import Image from "next/image";
-import { useState } from "react";
+'use client';
+import Image from 'next/image';
+import { useState } from 'react';
 
 export function Hero() {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState('en');
 
   const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === "en" ? "pt" : "en"));
+    setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'pt' : 'en'));
   };
   return (
     <>
@@ -16,7 +16,7 @@ export function Hero() {
             className="rounded-md py-2 text-slate-300 hover:text-slate-100"
             onClick={toggleLanguage}
           >
-            {language === "en" ? "🇧🇷 Portuguese" : "🇺🇸 English"}
+            {language === 'en' ? '🇧🇷 Portuguese' : '🇺🇸 English'}
           </button>
         </div>
       </div>
@@ -38,13 +38,13 @@ export function Hero() {
               height={200}
               quality={100}
               src={
-                "https://media.licdn.com/dms/image/v2/C4D03AQG7fifUFFS-yQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1648318789556?e=1734566400&v=beta&t=b4DrX-JMUkoKAJRiB2qJGWLFGr04HqkfFhb-S_EtNIw"
+                'https://media.licdn.com/dms/image/v2/C4D03AQG7fifUFFS-yQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1648318789556?e=1734566400&v=beta&t=b4DrX-JMUkoKAJRiB2qJGWLFGr04HqkfFhb-S_EtNIw'
               }
             />
           </div>
           <div className="max-w-sm">
             <p className=" px-4 text-base font-light text-zinc-400 md:px-0">
-              {language === "en" ? (
+              {language === 'en' ? (
                 <>
                   <span className="font-normal text-zinc-50">
                     Hi! I&apos;m Felipe Ribeiro
@@ -76,7 +76,7 @@ export function Hero() {
 
           <blockquote className="mt-8 border-l-4 border-solid border-l-gray-700 pl-5">
             <p className="px-4 text-base font-light text-zinc-400 md:px-0">
-              {language === "en" ? (
+              {language === 'en' ? (
                 <>
                   At wBrain Agile People, I drive projects as a Senior Frontend
                   Engineer, applying my Marketing knowledge acquired at
@@ -109,20 +109,20 @@ export function Hero() {
         </div>
         <div className="mt-8 max-w-xl">
           <span className="pl-8 text-xl text-zinc-50 sm:pl-0">
-            {language === "en" ? "Career" : "Carreira"}
+            {language === 'en' ? 'Career' : 'Carreira'}
           </span>
 
           <div className="mb-4 mt-6 px-4">
             <p className="mb-4 px-4 text-base font-normal text-zinc-200 md:px-0">
-              {language === "en"
-                ? "Senior Frontend Engineer"
-                : "Engenheiro Frontend Sênior"}
+              {language === 'en'
+                ? 'Senior Frontend Engineer'
+                : 'Engenheiro Frontend Sênior'}
             </p>
             <ul className="px-4 text-base font-light text-zinc-400 md:px-0">
-              {language === "en" ? (
+              {language === 'en' ? (
                 <>
                   <li>
-                    Worked at <span className="text-zinc-200">PagSeguro </span>{" "}
+                    Worked at <span className="text-zinc-200">PagSeguro </span>{' '}
                     and <span className="text-zinc-200">Banco Sofisa</span>;
                   </li>
                   <li> Development and maintenance of applications; </li>
@@ -144,7 +144,7 @@ export function Hero() {
               ) : (
                 <>
                   <li>
-                    Atuação na <span className="text-zinc-200">PagSeguro </span>{" "}
+                    Atuação na <span className="text-zinc-200">PagSeguro </span>{' '}
                     e <span className="text-zinc-200">Banco Sofisa</span>;
                   </li>
                   <li> Desenvolvimento e manutenção de aplicações; </li>
@@ -166,9 +166,9 @@ export function Hero() {
               )}
             </ul>
             <p className="mt-4 px-4 text-base font-light text-zinc-300 md:px-0">
-              {language === "en"
-                ? "wBrain Agile People Mar 2022 - Present - São Paulo, Brazil"
-                : "wBrain Agile People mar de 2022 - o momento - São Paulo, Brasil"}
+              {language === 'en'
+                ? 'wBrain Agile People Mar 2022 - Present - São Paulo, Brazil'
+                : 'wBrain Agile People mar de 2022 - o momento - São Paulo, Brasil'}
             </p>
           </div>
 
@@ -176,12 +176,12 @@ export function Hero() {
 
           <div className="mb-4 mt-6 px-4">
             <p className="mb-4 px-4 text-base font-normal text-zinc-200 md:px-0">
-              {language === "en"
-                ? "Front End Developer"
-                : "Desenvolvedor Frontend"}
+              {language === 'en'
+                ? 'Front End Developer'
+                : 'Desenvolvedor Frontend'}
             </p>
             <ul className="px-4 text-base font-light text-zinc-400 md:px-0">
-              {language === "en" ? (
+              {language === 'en' ? (
                 <>
                   <li> Development and maintenance of applications; </li>
                   <li>
@@ -224,23 +224,23 @@ export function Hero() {
               )}
             </ul>
             <p className="mt-4 px-4 text-base font-light text-zinc-300 md:px-0">
-              {language === "en"
-                ? "Folha Dirigida Oct 2021 - Mar 2022 - Rio de Janeiro, Brazil"
-                : "Folha Dirigida out de 2021 - mar de 2022 - Rio de Janeiro, Brasil"}
+              {language === 'en'
+                ? 'Folha Dirigida Oct 2021 - Mar 2022 - Rio de Janeiro, Brazil'
+                : 'Folha Dirigida out de 2021 - mar de 2022 - Rio de Janeiro, Brasil'}
             </p>
           </div>
           <hr className="my-6 border-t border-gray-500" />
 
           <div className="mb-4 mt-6 px-4">
             <p className="mb-4 px-4 text-base font-normal text-zinc-200 md:px-0">
-              {language === "en" ? "Web Developer" : "Desenvolvedor da web"}
+              {language === 'en' ? 'Web Developer' : 'Desenvolvedor da web'}
             </p>
             <ul className="px-4 text-base font-light text-zinc-400 md:px-0">
-              {language === "en" ? (
+              {language === 'en' ? (
                 <>
                   <li>
-                    {" "}
-                    Creation of applications with the following technologies:{" "}
+                    {' '}
+                    Creation of applications with the following technologies:{' '}
                   </li>
                   <li>HTML, CSS, JavaScript</li>
                   <li>React</li>
@@ -260,9 +260,9 @@ export function Hero() {
               )}
             </ul>
             <p className="mt-4 px-4 text-base font-light text-zinc-300 md:px-0">
-              {language === "en"
-                ? "Freelancer Jan 2017 - Nov 2020 - São Paulo, Brazil"
-                : "Autônomo · Freelance jan de 2017 - nov de 2020 - São Paulo, Brasil"}
+              {language === 'en'
+                ? 'Freelancer Jan 2017 - Nov 2020 - São Paulo, Brazil'
+                : 'Autônomo · Freelance jan de 2017 - nov de 2020 - São Paulo, Brasil'}
             </p>
           </div>
         </div>

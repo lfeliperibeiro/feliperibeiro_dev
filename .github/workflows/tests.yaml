@@ -11,7 +11,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "lts/hydrogen"
+          node-version: 'lts/hydrogen'
 
       - name: Install pnpm
         run: npm install -g pnpm
@@ -30,7 +30,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "lts/hydrogen"
+          node-version: 'lts/hydrogen'
 
       - name: Install pnpm
         run: npm install -g pnpm
@@ -49,7 +49,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "lts/hydrogen"
+          node-version: 'lts/hydrogen'
 
       - name: Install pnpm
         run: npm install -g pnpm
@@ -70,7 +70,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "lts/hydrogen"
+          node-version: 'lts/hydrogen'
 
       - name: Install pnpm
         run: npm install -g pnpm
