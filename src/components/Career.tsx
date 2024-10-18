@@ -4,7 +4,7 @@ interface CareerProps {
 
 export function Career({ language }: CareerProps) {
   return (
-    <div className="mt-8 max-w-xl">
+    <div className="mt-8 max-w-xl" data-testid="career">
       <span className="pl-8 text-xl text-zinc-50 sm:pl-0">
         {language === 'en' ? 'Career' : 'Carreira'}
       </span>

@@ -4,7 +4,7 @@ interface BioProps {
 
 export function Bio({ language }: BioProps) {
   return (
-    <div className="mt-8 max-w-xl">
+    <div className="mt-8 max-w-xl" data-testid="bio">
       <span className="pl-8 text-xl text-zinc-50 sm:pl-0">Bio</span>
 
       <blockquote className="mt-8 border-l-4 border-solid border-l-gray-700 pl-5">

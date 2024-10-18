@@ -43,6 +43,7 @@ export function Hero() {
               src={
                 'https://media.licdn.com/dms/image/v2/C4D03AQG7fifUFFS-yQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1648318789556?e=1734566400&v=beta&t=b4DrX-JMUkoKAJRiB2qJGWLFGr04HqkfFhb-S_EtNIw'
               }
+              priority
             />
           </div>
           <Resume language={language} />
