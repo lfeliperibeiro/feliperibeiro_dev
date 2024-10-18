@@ -1,13 +1,13 @@
-'use client'
-import Image from 'next/image'
-import { useState } from 'react'
+'use client';
+import Image from 'next/image';
+import { useState } from 'react';
 
 export function Hero() {
-  const [language, setLanguage] = useState('en')
+  const [language, setLanguage] = useState('en');
 
   const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'pt' : 'en'))
-  }
+    setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'pt' : 'en'));
+  };
   return (
     <>
       <div className="mt-2 flex w-full flex-1 flex-col items-center justify-center">
@@ -268,5 +268,5 @@ export function Hero() {
         </div>
       </section>
     </>
-  )
+  );
 }

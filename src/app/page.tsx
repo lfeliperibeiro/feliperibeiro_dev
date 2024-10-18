@@ -1,38 +1,37 @@
-import { Footer } from '../components/Footer'
-import { Hero } from '../components/Hero'
-import Head from 'next/head'
+import { Footer } from '../components/Footer';
+import { Hero } from '../components/Hero';
+import Head from 'next/head';
 
-// Define the interface for the PageSpeed data
 interface LighthouseCategory {
-  score: number
+  score: number;
 }
 
 interface LighthouseResult {
   categories: {
-    performance: LighthouseCategory
-    accessibility: LighthouseCategory
-    'best-practices': LighthouseCategory
-    seo: LighthouseCategory
-  }
+    performance: LighthouseCategory;
+    accessibility: LighthouseCategory;
+    'best-practices': LighthouseCategory;
+    seo: LighthouseCategory;
+  };
 }
 
 interface PageSpeedData {
-  lighthouseResult: LighthouseResult
+  lighthouseResult: LighthouseResult;
 }
 
 export default async function Home() {
-  let pageSpeedData: PageSpeedData | null = null
+  let pageSpeedData: PageSpeedData | null = null;
 
   try {
     const response = await fetch(
       `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${process.env.NEXT_PUBLIC_PAGESPEED_URL}&key=${process.env.NEXT_PUBLIC_PAGESPEED_API_KEY}&category=performance&category=accessibility&category=best-practices&category=seo`,
-    )
+    );
     if (!response.ok) {
-      throw new Error('Network response was not ok')
+      throw new Error('Network response was not ok');
     }
-    pageSpeedData = await response.json()
+    pageSpeedData = await response.json();
   } catch (error) {
-    console.error('Failed to fetch PageSpeed data:', error)
+    console.error('Failed to fetch PageSpeed data:', error);
   }
 
   return (
@@ -91,5 +90,5 @@ export default async function Home() {
         <Footer />
       </main>
     </>
-  )
+  );
 }

@@ -8,17 +8,16 @@
 </a>
   <br><br>
 
-
 # Índice
 
 - [Sobre](#sobre)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 
 <a id="sobre"></a>
+
 ## :bookmark: Sobre
 
 Página pessoal e de portfolio
-
 
 <a id="tecnologias-utilizadas"></a>
 
@@ -26,11 +25,10 @@ Página pessoal e de portfolio
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-* React
-* Tailwind
-* typescript
-* Node.js
-
+- React
+- Tailwind
+- typescript
+- Node.js
 
 ## :memo: License
 
