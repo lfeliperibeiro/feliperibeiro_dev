@@ -30,19 +30,22 @@ export function PageSpeedData({ pageSpeedData }: PageSpeedDataProps) {
           <p className="text-left text-base font-light text-zinc-400">
             Performance Score:{' '}
             <span className="text-green-500">
-              {pageSpeedData.lighthouseResult.categories.performance.score * 100}
+              {pageSpeedData.lighthouseResult.categories.performance.score *
+                100}
             </span>
           </p>
           <p className="text-left text-base font-light text-zinc-400">
             Accessibility Score:{' '}
             <span className="text-green-500">
-              {pageSpeedData.lighthouseResult.categories.accessibility.score * 100}
+              {pageSpeedData.lighthouseResult.categories.accessibility.score *
+                100}
             </span>
           </p>
           <p className="text-left text-base font-light text-zinc-400">
             Best Practices Score:{' '}
             <span className="text-green-500">
-              {pageSpeedData.lighthouseResult.categories['best-practices'].score * 100}
+              {pageSpeedData.lighthouseResult.categories['best-practices']
+                .score * 100}
             </span>
           </p>
           <p className="text-left text-base font-light text-zinc-400">

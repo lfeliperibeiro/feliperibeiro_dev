@@ -9,9 +9,7 @@ export function Hero() {
   const [language, setLanguage] = useState('en');
 
   const toggleLanguage = () => {
-    setLanguage((prevLanguage: 'en' | 'pt') =>
-      prevLanguage === 'en' ? 'pt' : 'en',
-    );
+    setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'pt' : 'en'));
   };
   return (
     <>
