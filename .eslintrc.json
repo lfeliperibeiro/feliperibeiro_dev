@@ -1,7 +1,8 @@
 {
   "extends": [
-    "@ribeiro-ui/eslint-config/next", 
+    "eslint:recommended",
+    "plugin:jest/recommended",
     "next/core-web-vitals",
-    "plugin:tailwindcss/recommended"
+    "prettier"
   ]
 }
