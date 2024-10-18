@@ -3,20 +3,6 @@ name: Automated Tests
 on: pull_request
 
 jobs:
-  name: Install pnpm
-  uses: pnpm/action-setup@v2
-  with:
-    version: 7
-
-- name: Setup Node.js
-  uses: actions/setup-node@v3
-  with:
-    node-version: "lts/hydrogen"
-    cache: pnpm
-
-- name: Install dependencies
-  run: pnpm install
-
   jest:
     name: Jest Ubuntu
     runs-on: ubuntu-latest
