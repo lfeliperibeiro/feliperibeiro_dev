@@ -4,7 +4,7 @@ interface ResumeProps {
 
 export function Resume({ language }: ResumeProps) {
   return (
-    <div className="max-w-sm">
+    <div className="max-w-sm" data-testid="resume">
       <p className=" px-4 text-base font-light text-zinc-400 md:px-0">
         {language === 'en' ? (
           <>

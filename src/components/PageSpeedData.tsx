@@ -13,7 +13,7 @@ interface LighthouseResult {
   };
 }
 
-interface PageSpeedDataType {
+export interface PageSpeedDataType {
   lighthouseResult: LighthouseResult;
 }
 
@@ -24,7 +24,10 @@ interface PageSpeedDataProps {
 export function PageSpeedData({ pageSpeedData }: PageSpeedDataProps) {
   return (
     pageSpeedData && (
-      <div className="mt-14 flex w-full flex-1 flex-col items-center justify-center pl-8 sm:pl-0">
+      <div
+        className="mt-14 flex w-full flex-1 flex-col items-center justify-center pl-8 sm:pl-0"
+        data-testid="page-speed-data"
+      >
         <div className="mx-auto mt-10 w-full max-w-xl flex-1 flex-col items-start justify-center">
           <h2 className="mb-2 text-xl text-zinc-50">PageSpeed Insights</h2>
           <p className="text-left text-base font-light text-zinc-400">
