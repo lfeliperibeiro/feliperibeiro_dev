@@ -3,19 +3,22 @@ name: Linting
 on: pull_request
 
 jobs:
- name: Install pnpm
-   - uses: pnpm/action-setup@v2
-     with:
-      version: 7
+  install_pnpm:
+    name: Install pnpm
+    runs-on: ubuntu-latest
+    steps:
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
 
-  - name: Setup Node.js
-    uses: actions/setup-node@v3
-    with:
-      node-version: "lts/hydrogen"
-      cache: pnpm
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "lts/hydrogen"
+          cache: pnpm
 
-  - name: Install dependencies
-    run: pnpm install
+      - name: Install dependencies
+        run: pnpm install
 
   prettier:
     name: Prettier
