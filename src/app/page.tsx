@@ -1,5 +1,5 @@
 import { Footer } from '../components/Footer';
-import { Hero } from '../components/Hero';
+import { Content } from '../components/Content';
 import Head from 'next/head';
 import { PageSpeedData } from '../components/PageSpeedData';
 
@@ -53,7 +53,7 @@ export default async function Home() {
       </Head>
       <main className="flex h-screen w-full flex-col items-end overflow-auto bg-gray-950">
         <PageSpeedData pageSpeedData={pageSpeedData} />
-        <Hero />
+        <Content />
         <Footer />
       </main>
     </>

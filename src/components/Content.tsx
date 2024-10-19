@@ -5,7 +5,7 @@ import { Bio } from './Bio';
 import { Resume } from './Resume';
 import { Career } from './Career';
 
-export function Hero() {
+export function Content() {
   const [language, setLanguage] = useState('en');
 
   const toggleLanguage = () => {
@@ -25,7 +25,7 @@ export function Hero() {
       </div>
       <section
         className="mt-4 flex w-full flex-1 flex-col items-center justify-center"
-        data-testid="hero"
+        data-testid="content"
       >
         <div className="w-full max-w-2xl pl-8">
           <h1 className="mb-4 inline-block bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 bg-clip-text text-4xl text-transparent">
