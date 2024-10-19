@@ -12,7 +12,7 @@ const pageData: PageSpeedDataType = {
   },
 };
 
-describe('Hero', () => {
+describe('PageSpeedData', () => {
   it('should render the page speed data component', () => {
     render(<PageSpeedData pageSpeedData={pageData} />);
     expect(screen.getByTestId('page-speed-data')).toBeInTheDocument();
