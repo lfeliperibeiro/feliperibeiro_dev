@@ -1,32 +1,16 @@
-interface ResumeProps {
-  language: string;
-}
+'use client';
+import { useTranslations } from 'next-intl';
 
-export function Resume({ language }: ResumeProps) {
+export function Resume() {
+  const t = useTranslations('Resume');
+
   return (
     <div className="max-w-sm" data-testid="resume">
-      <p className=" px-4 text-base font-light text-zinc-400 md:px-0">
-        {language === 'en' ? (
-          <>
-            <span className="font-normal text-zinc-50">
-              Hi! I&apos;m Felipe Ribeiro
-            </span>
-            , a Senior Frontend Engineer. 7 years of experience. Currently I
-            have worked with the following technologies: React, NextJS, Styled
-            Components, Tailwind CSS, Zustand, Immer, Axios, Jest, Testing
-            Library, Storybook, Figma, Git, Github, Gitlab, Bitbucket, Jira.
-          </>
-        ) : (
-          <>
-            <span className="font-normal text-zinc-50">
-              Olá! Eu sou Felipe Ribeiro
-            </span>
-            , um Engenheiro Frontend Sênior. 7 anos de experiência. Atualmente
-            tenho trabalhado com as seguintes tecnologias: React, NextJS, Styled
-            Components, Tailwind CSS, Zustand, Immer, Axios, Jest, Testing
-            Library, Storybook, Figma, Git, Github, Gitlab, Bitbucket, Jira.
-          </>
-        )}
+      <p className="px-4 text-base font-light text-gray-600 dark:text-zinc-400 md:px-0">
+        <span className="font-normal text-gray-900 dark:text-zinc-50">
+          {t('greeting')}
+        </span>
+        , {t('role')}
       </p>
     </div>
   );

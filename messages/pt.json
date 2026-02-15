@@ -1,0 +1,73 @@
+{
+  "Header": {
+    "nav": {
+      "home": "Início",
+      "career": "Carreira",
+      "ariaLabel": "Principal"
+    },
+    "languageToggle": "🇺🇸 English",
+    "themeLight": "Claro",
+    "themeDark": "Escuro"
+  },
+  "Content": {
+    "languageToggle": "🇺🇸 English"
+  },
+  "Resume": {
+    "greeting": "Olá! Eu sou Felipe Ribeiro",
+    "role": "um Engenheiro Frontend Sênior. 9 anos de experiência. Atualmente tenho trabalhado com as seguintes tecnologias: React, ReactJS, Styled Components, Tailwind CSS, Zustand, Immer, Axios, Jest, Testing Library, Storybook, Figma, Git, Github, Gitlab, Bitbucket, Jira."
+  },
+  "Bio": {
+    "title": "Bio",
+    "text": "Na Sensedia, impulsiono projetos como Engenheiro Frontend, aplicando meu conhecimento em Marketing adquirido na Universidade Paulista. Minha expertise abrange React, Next.js e Typescript, fundamentais na criação de soluções web que otimizam a experiência do usuário. Com as certificações da Rocketseat, aprimorei minha habilidade em CI/CD, contribuindo significativamente para a inovação de interfaces e colaborando ativamente para alinhar estratégias de negócios com a tecnologia. Nossa equipe valoriza a colaboração e a busca constante por melhorias nas práticas de desenvolvimento."
+  },
+  "Career": {
+    "title": "Carreira",
+    "seniorFrontend": "Engenheiro Frontend Sênior",
+    "wbrainPeriod": "wBrain Agile People mar de 2022 - outubro de 2024 - São Paulo, Brasil",
+    "frontEndDeveloper": "Desenvolvedor Frontend",
+    "folhaPeriod": "Folha Dirigida out de 2021 - mar de 2022 - Rio de Janeiro, Brasil",
+    "webDeveloper": "Desenvolvedor da web",
+    "freelancerPeriod": "Autônomo · Freelance jan de 2017 - nov de 2020 - São Paulo, Brasil",
+    "frontendEngineer": "Engenheiro Frontend",
+    "sensediaPeriod": "Sensedia nov de 2024 - o momento - São Paulo, Brasil",
+    "job4": {
+      "item1": "Desenvolvimento e manutenção de aplicações;",
+      "item2": "Definir a arquitetura das aplicações, escolhendo as tecnologias e ferramentas adequadas para o projeto.",
+      "item3": "Estabelecer e promover padrões de codificação,",
+      "item4": "Analisar e otimizar a performance das aplicações, garantindo que sejam rápidas e responsivas.",
+      "item5": "CI/CD;",
+      "item6": "Consumo de API REST;"
+    },
+    "job1": {
+      "item1": "Atuação na",
+      "item2": "e",
+      "item3": "Desenvolvimento e manutenção de aplicações;",
+      "item4": "Definir a arquitetura das aplicações, escolhendo as tecnologias e ferramentas adequadas para o projeto.",
+      "item5": "Estabelecer e promover padrões de codificação, melhores práticas e diretrizes para a equipe de desenvolvimento.",
+      "item6": "Analisar e otimizar a performance das aplicações, garantindo que sejam rápidas e responsivas.",
+      "item7": "CI/CD;",
+      "item8": "Consumo de API REST;"
+    },
+    "job2": {
+      "item1": "Desenvolvimento e manutenção de aplicações;",
+      "item2": "Definir a arquitetura das aplicações, escolhendo as tecnologias e ferramentas adequadas para o projeto.",
+      "item3": "Estabelecer e promover padrões de codificação, melhores práticas e diretrizes para a equipe de desenvolvimento.",
+      "item4": "Trabalhando com as seguintes tecnologias:",
+      "tech1": "React",
+      "tech2": "React Native",
+      "tech3": "Nest.js",
+      "tech4": "Typescript",
+      "tech5": "Node.js",
+      "tech6": "Graphql",
+      "tech7": "PostgreSQL"
+    },
+    "job3": {
+      "item1": "Criação de aplicações com as seguintes tecnologias:",
+      "tech1": "HTML, CSS, JavaScript",
+      "tech2": "React",
+      "tech3": "React Native",
+      "tech4": "Nunjucks",
+      "tech5": "Node.js"
+    }
+  }
+}

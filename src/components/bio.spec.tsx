@@ -4,7 +4,7 @@ import { Bio } from './Bio';
 
 describe('Bio', () => {
   it('should render the bio component', () => {
-    render(<Bio language="en" />);
+    render(<Bio />);
     expect(screen.getByTestId('bio')).toBeInTheDocument();
   });
 });

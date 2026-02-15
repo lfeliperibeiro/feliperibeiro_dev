@@ -1,40 +1,18 @@
-interface BioProps {
-  language: string;
-}
+'use client';
+import { useTranslations } from 'next-intl';
 
-export function Bio({ language }: BioProps) {
+export function Bio() {
+  const t = useTranslations('Bio');
+
   return (
     <div className="mt-8 max-w-xl" data-testid="bio">
-      <span className="pl-8 text-xl text-zinc-50 sm:pl-0">Bio</span>
+      <span className="pl-8 text-xl text-gray-900 dark:text-zinc-50 sm:pl-0">
+        {t('title')}
+      </span>
 
-      <blockquote className="mt-8 border-l-4 border-solid border-l-gray-700 pl-5">
-        <p className="px-4 text-base font-light text-zinc-400 md:px-0">
-          {language === 'en' ? (
-            <>
-              At wBrain Agile People, I drive projects as a Senior Frontend
-              Engineer, applying my Marketing knowledge acquired at Universidade
-              Paulista. My expertise encompasses React, Next.js, and Typescript,
-              which are fundamental in creating web solutions that optimize user
-              experience. With certifications from Rocketseat, I have enhanced
-              my skills in CI/CD, significantly contributing to interface
-              innovation and actively collaborating to align business strategies
-              with technology. Our team values collaboration and the constant
-              pursuit of improvements in development practices.
-            </>
-          ) : (
-            <>
-              Na wBrain Agile People, impulsiono projetos como Engenheiro
-              Frontend Sênior, aplicando meu conhecimento em Marketing adquirido
-              na Universidade Paulista. Minha expertise abrange React, Next.js e
-              Typescript, fundamentais na criação de soluções web que otimizam a
-              experiência do usuário. Com as certificações da Rocketseat,
-              aprimorei minha habilidade em CI/CD, contribuindo
-              significativamente para a inovação de interfaces e colaborando
-              ativamente para alinhar estratégias de negócios com a tecnologia.
-              Nossa equipe valoriza a colaboração e a busca constante por
-              melhorias nas práticas de desenvolvimento.
-            </>
-          )}
+      <blockquote className="mt-8 border-l-4 border-solid border-l-gray-300 pl-5 dark:border-l-gray-700">
+        <p className="px-4 text-base font-light text-gray-600 dark:text-zinc-400 md:px-0">
+          {t('text')}
         </p>
       </blockquote>
     </div>
