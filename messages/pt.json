@@ -2,7 +2,8 @@
   "Header": {
     "nav": {
       "home": "Início",
-      "career": "Carreira"
+      "career": "Carreira",
+      "ariaLabel": "Principal"
     },
     "languageToggle": "🇺🇸 English",
     "themeLight": "Claro",

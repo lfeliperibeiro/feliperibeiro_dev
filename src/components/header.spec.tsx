@@ -18,6 +18,6 @@ describe('Header', () => {
   it('should render the header with navigation', () => {
     renderHeader();
     expect(screen.getByRole('banner')).toBeInTheDocument();
-    expect(screen.getByRole('navigation', { name: 'Principal' })).toBeInTheDocument();
+    expect(screen.getByRole('navigation', { name: 'nav.ariaLabel' })).toBeInTheDocument();
   });
 });
