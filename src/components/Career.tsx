@@ -9,8 +9,14 @@ export function Career() {
   const job4 = useTranslations('Career.job4');
 
   return (
-    <div id="career" className="mt-8 max-w-xl scroll-mt-20" data-testid="career">
-      <span className="pl-8 text-xl text-gray-900 dark:text-zinc-50 sm:pl-0">{t('title')}</span>
+    <div
+      id="career"
+      className="mt-8 max-w-xl scroll-mt-20"
+      data-testid="career"
+    >
+      <span className="pl-8 text-xl text-gray-900 dark:text-zinc-50 sm:pl-0">
+        {t('title')}
+      </span>
 
       <div className="mb-4 mt-6 px-4">
         <p className="mb-4 px-4 text-base font-normal text-gray-800 dark:text-zinc-200 md:px-0">
@@ -37,8 +43,13 @@ export function Career() {
         </p>
         <ul className="px-4 text-base font-light text-gray-600 dark:text-zinc-400 md:px-0">
           <li>
-            {job1('item1')} <span className="text-gray-800 dark:text-zinc-200">PagSeguro </span> {job1('item2')}{' '}
-            <span className="text-gray-800 dark:text-zinc-200">Banco Sofisa</span>;
+            {job1('item1')}{' '}
+            <span className="text-gray-800 dark:text-zinc-200">PagSeguro </span>{' '}
+            {job1('item2')}{' '}
+            <span className="text-gray-800 dark:text-zinc-200">
+              Banco Sofisa
+            </span>
+            ;
           </li>
           <li> {job1('item3')} </li>
           <li>{job1('item4')}</li>

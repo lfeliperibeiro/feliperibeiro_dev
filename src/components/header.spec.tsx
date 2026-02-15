@@ -10,7 +10,7 @@ function renderHeader() {
   return render(
     <ThemeProvider initialTheme="dark">
       <Header />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 }
 
@@ -18,6 +18,8 @@ describe('Header', () => {
   it('should render the header with navigation', () => {
     renderHeader();
     expect(screen.getByRole('banner')).toBeInTheDocument();
-    expect(screen.getByRole('navigation', { name: 'nav.ariaLabel' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('navigation', { name: 'nav.ariaLabel' }),
+    ).toBeInTheDocument();
   });
 });

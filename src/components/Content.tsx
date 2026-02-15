@@ -20,10 +20,10 @@ export function Content() {
             Inspired. UX. Idea
           </Heading>
           <div className="gap-6 sm:flex">
-          <Resume />
+            <Resume />
+          </div>
         </div>
-        </div>
-      
+
         <Bio />
         <Career />
       </section>

@@ -9,7 +9,10 @@ export function Footer() {
       data-testid="footer"
     >
       <div className="flex w-full items-center justify-center py-4">
-        <nav className="flex items-center gap-2 md:gap-8" aria-label="Redes sociais">
+        <nav
+          className="flex items-center gap-2 md:gap-8"
+          aria-label="Redes sociais"
+        >
           <Link
             href="https://github.com/lfeliperibeiro"
             target="_blank"

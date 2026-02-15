@@ -1,7 +1,13 @@
 'use client';
 
 import type { ReactNode } from 'react';
-import { createContext, useCallback, useContext, useMemo, useState } from 'react';
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useMemo,
+  useState,
+} from 'react';
 
 type Theme = 'light' | 'dark';
 
@@ -36,9 +42,14 @@ export function ThemeProvider({ initialTheme, children }: ThemeProviderProps) {
     document.documentElement.classList.toggle('dark', next === 'dark');
   }, []);
 
-  const value = useMemo(() => ({ theme, setTheme: setThemeAndPersist }), [theme, setThemeAndPersist]);
+  const value = useMemo(
+    () => ({ theme, setTheme: setThemeAndPersist }),
+    [theme, setThemeAndPersist],
+  );
 
-  return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
+  return (
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
+  );
 }
 
 export function useTheme(): ThemeContextValue {

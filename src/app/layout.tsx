@@ -33,8 +33,14 @@ export default async function RootLayout({
   const theme = themeCookie === 'light' ? 'light' : 'dark';
 
   return (
-    <html lang={locale} className={theme === 'light' ? '' : 'dark'} suppressHydrationWarning>
-      <body className={`${poppins.className} bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-zinc-100`}>
+    <html
+      lang={locale}
+      className={theme === 'light' ? '' : 'dark'}
+      suppressHydrationWarning
+    >
+      <body
+        className={`${poppins.className} bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-zinc-100`}
+      >
         <ThemeProvider initialTheme={theme}>
           <NextIntlClientProvider locale={locale} messages={messages}>
             <ReactAriaProviders locale={locale}>

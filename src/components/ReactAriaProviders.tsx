@@ -14,7 +14,10 @@ interface ReactAriaProvidersProps {
   children: ReactNode;
 }
 
-export function ReactAriaProviders({ locale, children }: ReactAriaProvidersProps) {
+export function ReactAriaProviders({
+  locale,
+  children,
+}: ReactAriaProvidersProps) {
   const ariaLocale = localeToAriaLocale[locale] ?? 'en-US';
 
   return (
