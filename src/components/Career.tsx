@@ -1,163 +1,96 @@
-interface CareerProps {
-  language: string;
-}
+'use client';
+import { useTranslations } from 'next-intl';
 
-export function Career({ language }: CareerProps) {
+export function Career() {
+  const t = useTranslations('Career');
+  const job1 = useTranslations('Career.job1');
+  const job2 = useTranslations('Career.job2');
+  const job3 = useTranslations('Career.job3');
+  const job4 = useTranslations('Career.job4');
+
   return (
-    <div className="mt-8 max-w-xl" data-testid="career">
-      <span className="pl-8 text-xl text-zinc-50 sm:pl-0">
-        {language === 'en' ? 'Career' : 'Carreira'}
-      </span>
+    <div id="career" className="mt-8 max-w-xl scroll-mt-20" data-testid="career">
+      <span className="pl-8 text-xl text-gray-900 dark:text-zinc-50 sm:pl-0">{t('title')}</span>
 
       <div className="mb-4 mt-6 px-4">
-        <p className="mb-4 px-4 text-base font-normal text-zinc-200 md:px-0">
-          {language === 'en'
-            ? 'Senior Frontend Engineer'
-            : 'Engenheiro Frontend Sênior'}
+        <p className="mb-4 px-4 text-base font-normal text-gray-800 dark:text-zinc-200 md:px-0">
+          {t('frontendEngineer')}
         </p>
-        <ul className="px-4 text-base font-light text-zinc-400 md:px-0">
-          {language === 'en' ? (
-            <>
-              <li>
-                Worked at <span className="text-zinc-200">PagSeguro </span> and{' '}
-                <span className="text-zinc-200">Banco Sofisa</span>;
-              </li>
-              <li> Development and maintenance of applications; </li>
-              <li>
-                Define the architecture of applications, choosing the
-                appropriate technologies and tools for the project.
-              </li>
-              <li>
-                Establish and promote coding standards, best practices, and
-                guidelines for the development team.
-              </li>
-              <li>
-                Analyze and optimize application performance, ensuring they are
-                fast and responsive.
-              </li>
-              <li>CI/CD;</li>
-              <li>REST API consumption;</li>
-            </>
-          ) : (
-            <>
-              <li>
-                Atuação na <span className="text-zinc-200">PagSeguro </span> e{' '}
-                <span className="text-zinc-200">Banco Sofisa</span>;
-              </li>
-              <li> Desenvolvimento e manutenção de aplicações; </li>
-              <li>
-                Definir a arquitetura das aplicações, escolhendo as tecnologias
-                e ferramentas adequadas para o projeto.
-              </li>
-              <li>
-                Estabelecer e promover padrões de codificação, melhores práticas
-                e diretrizes para a equipe de desenvolvimento.
-              </li>
-              <li>
-                Analisar e otimizar a performance das aplicações, garantindo que
-                sejam rápidas e responsivas.
-              </li>
-              <li>CI/CD;</li>
-              <li>Consumo de API REST;</li>
-            </>
-          )}
+        <ul className="px-4 text-base font-light text-gray-600 dark:text-zinc-400 md:px-0">
+          <li> {job4('item1')} </li>
+          <li>{job4('item2')}</li>
+          <li>{job4('item3')}</li>
+          <li>{job4('item4')}</li>
+          <li>{job4('item5')}</li>
+          <li>{job4('item6')}</li>
         </ul>
-        <p className="mt-4 px-4 text-base font-light text-zinc-300 md:px-0">
-          {language === 'en'
-            ? 'wBrain Agile People Mar 2022 - Present - São Paulo, Brazil'
-            : 'wBrain Agile People mar de 2022 - o momento - São Paulo, Brasil'}
+        <p className="mt-4 px-4 text-base font-light text-gray-700 dark:text-zinc-300 md:px-0">
+          {t('sensediaPeriod')}
         </p>
       </div>
 
-      <hr className="my-6 border-t border-gray-500" />
+      <hr className="my-6 border-t border-gray-300 dark:border-gray-500" />
 
       <div className="mb-4 mt-6 px-4">
-        <p className="mb-4 px-4 text-base font-normal text-zinc-200 md:px-0">
-          {language === 'en' ? 'Front End Developer' : 'Desenvolvedor Frontend'}
+        <p className="mb-4 px-4 text-base font-normal text-gray-800 dark:text-zinc-200 md:px-0">
+          {t('seniorFrontend')}
         </p>
-        <ul className="px-4 text-base font-light text-zinc-400 md:px-0">
-          {language === 'en' ? (
-            <>
-              <li> Development and maintenance of applications; </li>
-              <li>
-                Define the architecture of applications, choosing the
-                appropriate technologies and tools for the project.
-              </li>
-              <li>
-                Establish and promote coding standards, best practices, and
-                guidelines for the development team.
-              </li>
-              <li>Working with the following technologies:</li>
-              <li>React</li>
-              <li>React Native</li>
-              <li>Nest.js</li>
-              <li>Typescript</li>
-              <li>Node.js</li>
-              <li>Graphql</li>
-              <li>PostgreSQL</li>
-            </>
-          ) : (
-            <>
-              <li> Desenvolvimento e manutenção de aplicações; </li>
-              <li>
-                Definir a arquitetura das aplicações, escolhendo as tecnologias
-                e ferramentas adequadas para o projeto.
-              </li>
-              <li>
-                Estabelecer e promover padrões de codificação, melhores práticas
-                e diretrizes para a equipe de desenvolvimento.
-              </li>
-              <li>Trabalhando com as seguintes tecnologias:</li>
-              <li>React</li>
-              <li>React Native</li>
-              <li>Nest.js</li>
-              <li>Typescript</li>
-              <li>Node.js</li>
-              <li>Graphql</li>
-              <li>PostgreSQL</li>
-            </>
-          )}
+        <ul className="px-4 text-base font-light text-gray-600 dark:text-zinc-400 md:px-0">
+          <li>
+            {job1('item1')} <span className="text-gray-800 dark:text-zinc-200">PagSeguro </span> {job1('item2')}{' '}
+            <span className="text-gray-800 dark:text-zinc-200">Banco Sofisa</span>;
+          </li>
+          <li> {job1('item3')} </li>
+          <li>{job1('item4')}</li>
+          <li>{job1('item5')}</li>
+          <li>{job1('item6')}</li>
+          <li>{job1('item7')}</li>
+          <li>{job1('item8')}</li>
         </ul>
-        <p className="mt-4 px-4 text-base font-light text-zinc-300 md:px-0">
-          {language === 'en'
-            ? 'Folha Dirigida Oct 2021 - Mar 2022 - Rio de Janeiro, Brazil'
-            : 'Folha Dirigida out de 2021 - mar de 2022 - Rio de Janeiro, Brasil'}
+        <p className="mt-4 px-4 text-base font-light text-gray-700 dark:text-zinc-300 md:px-0">
+          {t('wbrainPeriod')}
         </p>
       </div>
-      <hr className="my-6 border-t border-gray-500" />
+
+      <hr className="my-6 border-t border-gray-300 dark:border-gray-500" />
 
       <div className="mb-4 mt-6 px-4">
-        <p className="mb-4 px-4 text-base font-normal text-zinc-200 md:px-0">
-          {language === 'en' ? 'Web Developer' : 'Desenvolvedor da web'}
+        <p className="mb-4 px-4 text-base font-normal text-gray-800 dark:text-zinc-200 md:px-0">
+          {t('frontEndDeveloper')}
         </p>
-        <ul className="px-4 text-base font-light text-zinc-400 md:px-0">
-          {language === 'en' ? (
-            <>
-              <li>
-                {' '}
-                Creation of applications with the following technologies:{' '}
-              </li>
-              <li>HTML, CSS, JavaScript</li>
-              <li>React</li>
-              <li>React Native</li>
-              <li>Nunjucks</li>
-              <li>Node.js</li>
-            </>
-          ) : (
-            <>
-              <li> Criação de aplicações com as seguintes tecnologias: </li>
-              <li>HTML, CSS, JavaScript</li>
-              <li>React</li>
-              <li>React Native</li>
-              <li>Nunjucks</li>
-              <li>Node.js</li>
-            </>
-          )}
+        <ul className="px-4 text-base font-light text-gray-600 dark:text-zinc-400 md:px-0">
+          <li> {job2('item1')} </li>
+          <li>{job2('item2')}</li>
+          <li>{job2('item3')}</li>
+          <li>{job2('item4')}</li>
+          <li>{job2('tech1')}</li>
+          <li>{job2('tech2')}</li>
+          <li>{job2('tech3')}</li>
+          <li>{job2('tech4')}</li>
+          <li>{job2('tech5')}</li>
+          <li>{job2('tech6')}</li>
+          <li>{job2('tech7')}</li>
         </ul>
-        <p className="mt-4 px-4 text-base font-light text-zinc-300 md:px-0">
-          {language === 'en'
-            ? 'Freelancer Jan 2017 - Nov 2020 - São Paulo, Brazil'
-            : 'Autônomo · Freelance jan de 2017 - nov de 2020 - São Paulo, Brasil'}
+        <p className="mt-4 px-4 text-base font-light text-gray-700 dark:text-zinc-300 md:px-0">
+          {t('folhaPeriod')}
+        </p>
+      </div>
+      <hr className="my-6 border-t border-gray-300 dark:border-gray-500" />
+
+      <div className="mb-4 mt-6 px-4">
+        <p className="mb-4 px-4 text-base font-normal text-gray-800 dark:text-zinc-200 md:px-0">
+          {t('webDeveloper')}
+        </p>
+        <ul className="px-4 text-base font-light text-gray-600 dark:text-zinc-400 md:px-0">
+          <li> {job3('item1')} </li>
+          <li>{job3('tech1')}</li>
+          <li>{job3('tech2')}</li>
+          <li>{job3('tech3')}</li>
+          <li>{job3('tech4')}</li>
+          <li>{job3('tech5')}</li>
+        </ul>
+        <p className="mt-4 px-4 text-base font-light text-gray-700 dark:text-zinc-300 md:px-0">
+          {t('freelancerPeriod')}
         </p>
       </div>
     </div>

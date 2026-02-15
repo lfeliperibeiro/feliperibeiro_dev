@@ -1,0 +1,72 @@
+{
+  "Header": {
+    "nav": {
+      "home": "Home",
+      "career": "Career"
+    },
+    "languageToggle": "🇧🇷 Portuguese",
+    "themeLight": "Light",
+    "themeDark": "Dark"
+  },
+  "Content": {
+    "languageToggle": "🇧🇷 Portuguese"
+  },
+  "Resume": {
+    "greeting": "Hi! I'm Felipe Ribeiro",
+    "role": "a Senior Frontend Engineer. 9 years of experience. Currently I have worked with the following technologies: React, NextJS, Styled Components, Tailwind CSS, Zustand, Immer, Axios, Jest, Testing Library, Storybook, Figma, Git, Github, Gitlab, Bitbucket, Jira."
+  },
+  "Bio": {
+    "title": "Bio",
+    "text": "At Sensedia, I drive projects as a Frontend Engineer, applying my Marketing knowledge acquired at Universidade Paulista. My expertise encompasses React, Next.js, and Typescript, which are fundamental in creating web solutions that optimize user experience. With certifications from Rocketseat, I have enhanced my skills in CI/CD, significantly contributing to interface innovation and actively collaborating to align business strategies with technology. Our team values collaboration and the constant pursuit of improvements in development practices."
+  },
+  "Career": {
+    "title": "Career",
+    "seniorFrontend": "Senior Frontend Engineer",
+    "wbrainPeriod": "wBrain Agile People Mar 2022 - Oct 2024 - São Paulo, Brazil",
+    "frontEndDeveloper": "Front End Developer",
+    "folhaPeriod": "Folha Dirigida Oct 2021 - Mar 2022 - Rio de Janeiro, Brazil",
+    "webDeveloper": "Web Developer",
+    "freelancerPeriod": "Freelancer Jan 2017 - Nov 2020 - São Paulo, Brazil",
+    "frontendEngineer": "Frontend Engineer",
+    "sensediaPeriod": "Sensedia Nov 2024 - Present - São Paulo, Brazil",
+    "job4": {
+      "item1": "Development and maintenance of applications;",
+      "item2": "Define the architecture of applications, choosing the appropriate technologies and tools for the project.",
+      "item3": "Establish and promote coding standards,",
+      "item4": "Analyze and optimize application performance, ensuring they are fast and responsive.",
+      "item5": "CI/CD;",
+      "item6": "REST API consumption;"
+    },
+    "job1": {
+      "item1": "Worked at",
+      "item2": "and",
+      "item3": "Development and maintenance of applications;",
+      "item4": "Define the architecture of applications, choosing the appropriate technologies and tools for the project.",
+      "item5": "Establish and promote coding standards, best practices, and guidelines for the development team.",
+      "item6": "Analyze and optimize application performance, ensuring they are fast and responsive.",
+      "item7": "CI/CD;",
+      "item8": "REST API consumption;"
+    },
+    "job2": {
+      "item1": "Development and maintenance of applications;",
+      "item2": "Define the architecture of applications, choosing the appropriate technologies and tools for the project.",
+      "item3": "Establish and promote coding standards, best practices, and guidelines for the development team.",
+      "item4": "Working with the following technologies:",
+      "tech1": "React",
+      "tech2": "React Native",
+      "tech3": "Nest.js",
+      "tech4": "Typescript",
+      "tech5": "Node.js",
+      "tech6": "Graphql",
+      "tech7": "PostgreSQL"
+    },
+    "job3": {
+      "item1": "Creation of applications with the following technologies:",
+      "tech1": "HTML, CSS, JavaScript",
+      "tech2": "React",
+      "tech3": "React Native",
+      "tech4": "Nunjucks",
+      "tech5": "Node.js"
+    }
+  }
+}

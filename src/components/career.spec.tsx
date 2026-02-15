@@ -4,7 +4,7 @@ import { Career } from './Career';
 
 describe('Career', () => {
   it('should render the career component', () => {
-    render(<Career language="en" />);
+    render(<Career />);
     expect(screen.getByTestId('career')).toBeInTheDocument();
   });
 });
