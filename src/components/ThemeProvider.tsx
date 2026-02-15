@@ -1,11 +1,13 @@
 'use client';
 
+import type { ReactNode } from 'react';
 import { createContext, useCallback, useContext, useMemo, useState } from 'react';
 
 type Theme = 'light' | 'dark';
 
 type ThemeContextValue = {
   theme: Theme;
+  // eslint-disable-next-line no-unused-vars -- type definition; param is part of the API
   setTheme: (theme: Theme) => void;
 };
 
@@ -22,7 +24,7 @@ function setThemeCookie(value: Theme) {
 
 type ThemeProviderProps = Readonly<{
   initialTheme: Theme;
-  children: React.ReactNode;
+  children: ReactNode;
 }>;
 
 export function ThemeProvider({ initialTheme, children }: ThemeProviderProps) {
